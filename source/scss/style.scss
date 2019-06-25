@@ -1,0 +1,160 @@
+@import "fonts.scss";
+@import "variables.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/font-awesome/scss/font-awesome";
+
+body {
+  overflow-y: hidden;
+}
+
+header.container,
+footer.container {
+  height: 100px;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.logo {
+  font-size: 24px;
+  color: $white;
+}
+
+main {
+  height: calc(100vh - 200px);
+
+  &.container {
+    margin-top: 100px;
+  }
+}
+
+.fa {
+  font-size: 20px;
+}
+
+.btn.dropdown {
+  font-size: 24px;
+}
+
+.btn-purple {
+  border-width: 2px;
+}
+
+.btn-primary {
+  color: $purple;
+}
+
+.side-menu {
+  z-index: 10;
+  position: absolute;
+  height: calc(100vh - 200px);;
+  width: 300px;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: $body-bg;
+  overflow-y: scroll;
+}
+
+
+.main-list {
+  font-size: 20px;
+  line-height: 1.5;
+  color: $purple;
+
+  td {
+    position: relative;
+    padding-left: 68px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 16px;
+      width: 48px;
+      height: 48px;
+      background-color: $purple;
+      border-radius: 50%;
+    }
+  }
+}
+
+.first-col {
+  overflow-y: scroll;
+  min-width: 240px;
+  max-width: 240px;
+
+  -webkit-box-shadow:  inset 9px 0 5px -3px rgba(0,0,0,.25);
+  -moz-box-shadow:  inset 9px 0 5px -3px rgba(0,0,0,.25);
+  box-shadow: inset 9px 0 5px -3px rgba(0,0,0,.25);
+}
+
+.second-col {
+  height: 100%;
+  background-color: #e6e6e6;
+  overflow-y: scroll;
+}
+
+.third-col {
+  min-width: 300px;
+  max-width: 300px;
+
+  p {
+    overflow-y: scroll;
+    height: 240px;
+  }
+
+  tr {
+    border-bottom: 4px solid #e6e6e6;
+  }
+}
+
+.col table {
+  table-layout: fixed;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $purple;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $purple;
+}
+
+.copyright {
+  font-size: 14px;
+  color: $white;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+@media (min-width: 576px) {
+  .logo,
+  .fa {
+    font-size: 32px;
+  }
+
+  .btn {
+    font-size: 24px;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+@media (min-width: 1024px) {
+  .side-menu {
+    position: static;
+  }
+
+  header .fa {
+    font-size: 32px;
+  }
+}

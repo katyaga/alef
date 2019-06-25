@@ -1,0 +1,40 @@
+@import "../../node_modules/bootstrap/scss/_functions";
+@import "../../node_modules/bootstrap/scss/_variables";
+
+$font-family-base: "OpenSansdRegular";
+$line-height-base: 1.3;
+
+$table-striped-order: even;
+
+$purple: #7e00ff;
+
+$theme-colors: (
+  primary: $white,
+  purple: $purple
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px
+);
+
+$spacers: (
+  5: ($spacer * 2),
+  7: ($spacer * 3),
+  6: ($spacer * 2.5),
+  8: ($spacer * 4)
+);
+
+$black: #3c3c3c;
+$body-color: $black;
+$body-bg: #7000e0;
